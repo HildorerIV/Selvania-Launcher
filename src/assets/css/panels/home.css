@@ -37,11 +37,11 @@
 
 .server-status-text {
     font-size: 0.6rem;
-    color: #1AC707;
+    color: #1ac707;
 }
 
 .server-status-infos .red {
-    color: #FF0409;
+    color: #ff0409;
 }
 
 .status-player-count {
@@ -58,18 +58,18 @@
 
 .status-player-count:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     top: 10px;
     right: 10px;
     border-radius: 15px;
     border: solid 5px var(--background);
-    background: #1AC707;
+    background: #1ac707;
 }
 
 .red:after {
-    background: #FF0409;
+    background: #ff0409;
 }
 
 .home-bottom {
@@ -140,13 +140,11 @@
     padding: 0 1.5rem;
     padding-bottom: 1rem;
     font-size: 1.2rem;
-
 }
 
 .news-content .bbWrapper p {
     font-weight: 100;
     margin: 0;
-
 }
 
 .news-content .bbWrapper .news-author {
@@ -192,6 +190,12 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.social-block:hover {
+    border-radius: 100%;
+    opacity: 0.9;
 }
 
 .social-block .icon-social {
@@ -227,7 +231,7 @@
 }
 
 .player-head {
-    background: url('../../images/default/setve.png'), no-repeat;
+    background: url("../../images/default/setve.png"), no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     transition: var(--transition);
@@ -258,6 +262,12 @@
     border-radius: 15px;
     height: 3.2rem;
     padding-right: 1.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.play-instance:hover {
+    border-color: var(--hover-element-color);
 }
 
 .play-btn {
@@ -320,6 +330,12 @@
     font-size: 3rem;
     color: var(--element-color);
     margin: 0 1.5rem;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+.settings-btn:hover {
+    transform: rotate(90deg);
 }
 
 .instance-popup {
